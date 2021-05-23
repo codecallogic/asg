@@ -1,0 +1,71 @@
+.gallery {
+  width: 100%;
+  padding: 3rem 20rem;
+
+  &-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 0;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-evenly;
+
+    &-item {
+      width: 20%;
+      height: 40rem;
+      display: grid;
+      justify-content: center;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+
+      span {
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+      }
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    button {
+      margin-top: 8rem;
+      border: 0.4rem solid $color-quarternary;
+      border-radius: 3rem;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      color: $color-quarternary;
+      background-color: transparent;
+      text-transform: uppercase;
+      transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+      &:hover {
+        background-color: $color-quarternary;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

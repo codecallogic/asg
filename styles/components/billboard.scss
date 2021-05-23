@@ -1,0 +1,73 @@
+.billboards {
+  &-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 40rem;
+    overflow: hidden;
+
+    &-left {
+      width: 100%;
+      height: 40rem;
+
+      &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-right {
+      height: 40rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      background-color: black;
+      padding: 0 10rem;
+
+      &-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-subtitle {
+        font-size: 2rem;
+        font-family: 'Bebas Neue', cursive;
+      }
+
+      &-title {
+        font-size: 3.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        padding: 1rem 0;
+      }
+
+      &-text {
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 200;
+        padding: 1rem 0;
+      }
+
+      &-button {
+        border: 0.4rem solid $color-quarternary;
+        border-radius: 3rem;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        color: $color-quarternary;
+        background-color: transparent;
+        text-transform: uppercase;
+        transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+        &:hover {
+          background-color: $color-quarternary;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

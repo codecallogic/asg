@@ -1,0 +1,45 @@
+// COLORS
+$color-primary: #134c59;
+$color-secondary: #8daa91;
+$color-tertiary: #28112b;
+$color-quarternary: #ff715b;
+$color-quinary: #eb9486;
+
+// SHADES
+$color-gray-light: #a6a6a6;
+
+// BREAKPOINTS
+$extra-large: 1200px;
+$large-medium: 1050px;
+$large: 992px;
+$medium: 768px;
+$small: 600px;
+
+// FONT FAMILIES
+$font-family-primary: 'Bebas Neue';
+$font-family-primary-alt-1: 'Bebas Neue', cursive;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  line-height: 1.6;
+}

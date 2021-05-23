@@ -1,0 +1,132 @@
+.shop {
+  &-tags {
+    background-color: #f2f2f2;
+    padding: 2rem 40rem;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      &:not(:first-child) {
+        margin-left: 2rem;
+      }
+
+      &-heading {
+        font-size: 1.8rem;
+        font-family: $font-family-primary-alt-1;
+        font-weight: 800;
+      }
+
+      &-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+          padding: 0.3rem 1rem;
+          border: 0.2rem solid black;
+          border-radius: 3rem;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          margin: 0.3rem 0 0.3rem 0.3rem;
+          transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+
+          &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &-content {
+    width: 100%;
+    padding: 3rem 30rem 0 30rem;
+
+    &-store {
+      padding: 1rem 0 3rem 0;
+
+      &-heading {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 2rem 0;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+      }
+
+      &-row {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+
+        &-item {
+          width: 100%;
+          height: 50rem;
+          display: grid;
+          justify-content: center;
+          margin: 5rem 0 0 0;
+          overflow: hidden;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &-image-container {
+            width: 100%;
+            height: 40rem;
+            overflow: hidden;
+          }
+
+          img {
+            display: block;
+            width: 100%;
+            height: 40rem;
+            object-fit: cover;
+            transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+            &:hover {
+              transform: scale(1.3);
+            }
+          }
+
+          span {
+            display: block;
+            font-size: 1.6rem;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+          }
+
+          p {
+            padding: 0;
+            margin: 0;
+            font-size: 1.6rem;
+            color: $color-gray-light;
+          }
+        }
+      }
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        button {
+          margin-top: 8rem;
+          border: 0.4rem solid $color-quarternary;
+          border-radius: 3rem;
+          padding: 1rem 2rem;
+          font-size: 1.4rem;
+          color: $color-quarternary;
+          background-color: transparent;
+          text-transform: uppercase;
+          transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+          &:hover {
+            background-color: $color-quarternary;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

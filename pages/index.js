@@ -1,65 +1,32 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Nav from '../components/nav'
+import Header from '../components/header'
+import BillBoards from '../components/billboards'
 
-export default function Home() {
+const Home = ({}) => {
+  
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <>
+      <Nav></Nav>
+      <Header></Header>
+      {/* <div className="founders">
+        <div className="founders-item main">
+          <img src="" alt="" />
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      </div> */}
+      <BillBoards></BillBoards>
+      <div className="gallery">
+        <div className="gallery-heading">Fresh Favorites</div>
+        <div className="gallery-row">
+          <div className="gallery-row-item"><img src="https://i.pinimg.com/originals/d1/ed/e9/d1ede9ffa516577d02e30fdfd56b5703.jpg" alt="" /><span>Purple Rain</span></div>
+          <div className="gallery-row-item"><img src="https://www.warehouseone.com/dw/image/v2/BBNZ_PRD/on/demandware.static/-/Sites-master-catalog/default/dw20ebe690/who/1428100432~001~2.jpg?sw=454&sh=649&sm=fit" alt="" /><span>Classic Funny</span></div>
+          <div className="gallery-row-item"><img src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCTD_PRD/on/demandware.static/-/Sites-moncler-master-catalog/default/dw664b4144/image/products/G10928D7071083927999_F.jpg?sw=720&sh=912" alt="" /><span>ASG Events</span></div>
+          <div className="gallery-row-item"><img src="https://scene7.zumiez.com/is/image/zumiez/cat_max/Cookies-Litty-Black-T-Shirt-_331589.jpg" alt="" /><span>Cookies</span></div>
+          <div className="gallery-row-item"><img src="https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw3b600571/product_images/0103250500006NEW_00_001.jpg?sw=458&sh=710&sm=fit" alt="" /><span>Playboy</span></div>
+        </div>
+        <div className="gallery-button"><button>Shop Everything</button></div>
+      </div>
+    </>
   )
 }
+
+export default Home

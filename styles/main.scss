@@ -1,0 +1,14 @@
+// BASE
+@import './base.scss';
+
+// HELPERS
+@import './helpers/alignments.scss';
+
+// COMPONENTS
+@import './components/nav.scss';
+@import './components/header.scss';
+@import './components/billboard.scss';
+
+// PAGES
+@import './pages/home.scss';
+@import './pages/shop.scss';
