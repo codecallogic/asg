@@ -23,7 +23,7 @@ const Home = ({}) => {
           <div className="gallery-row-item"><img src="https://scene7.zumiez.com/is/image/zumiez/cat_max/Cookies-Litty-Black-T-Shirt-_331589.jpg" alt="" /><span>Cookies</span></div>
           <div className="gallery-row-item"><img src="https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw3b600571/product_images/0103250500006NEW_00_001.jpg?sw=458&sh=710&sm=fit" alt="" /><span>Playboy</span></div>
         </div>
-        <div className="gallery-button"><button>Shop Everything</button></div>
+        <div className="gallery-button"><button onClick={() => window.location.href = '/shop'}>Shop Everything</button></div>
       </div>
     </>
   )

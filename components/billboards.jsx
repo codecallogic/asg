@@ -12,7 +12,7 @@ const BillBoards = ({}) => {
             <div className="billboards-row-right-subtitle">ASG</div>
             <div className="billboards-row-right-title">Racks</div>
             <div className="billboards-row-right-text">Shop unique items & shirts. Enjoy world-wide shipping!</div>
-            <button className="billboards-row-right-button">Shop Now</button>
+            <button className="billboards-row-right-button" onClick={() => window.location.href = '/shop'}>Shop Now</button>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ const BillBoards = ({}) => {
             <div className="billboards-row-right-subtitle">ASG</div>
             <div className="billboards-row-right-title">Racks</div>
             <div className="billboards-row-right-text">Shop unique items & shirts. Enjoy world-wide shipping!</div>
-            <button className="billboards-row-right-button">Shop Now</button>
+            <button className="billboards-row-right-button" onClick={() => window.location.href = '/shop'}>Shop Now</button>
           </div>
         </div>
         <div className="billoboards-row-left">
@@ -38,7 +38,7 @@ const BillBoards = ({}) => {
             <div className="billboards-row-right-subtitle">ASG</div>
             <div className="billboards-row-right-title">Racks</div>
             <div className="billboards-row-right-text">Shop unique items & shirts. Enjoy world-wide shipping!</div>
-            <button className="billboards-row-right-button">Shop Now</button>
+            <button className="billboards-row-right-button" onClick={() => window.location.href = '/shop'}>Shop Now</button>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Header = ({}) => {
         <div className="header-content-subtitle">WeASG</div>
         <h1 className="header-content-title">WeASG's Community Style In One Spot</h1>
         <span className="header-content-quote">"New styles in retail" - The Boston Globe</span>
-        <button className="header-content-button">Shop Now</button>
+        <button className="header-content-button" onClick={() => window.location.href = '/shop'}>Shop Now</button>
       </div>
     </div>
   )
